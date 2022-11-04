@@ -1,5 +1,23 @@
 # WeatherStar 4000+
 
+## This fork
+
+This fork was has an alternative to the aspx server-side code which is written
+in Go.
+
+To build a binary that uses local files:
+```
+go build .
+```
+The resulting program will read the web assets from the current directory.
+
+To build a binary with the assets embedded:
+```
+go build -tags embed go build .
+```
+The resulting program will have all necessary assets embedded, and can be ran
+standalone without any accompanying files.
+
 ## About
 
 Welcome to the WeatherStar 4000+ project page!
